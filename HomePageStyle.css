@@ -4,9 +4,9 @@ body{
 
 header{
     border: 2px solid violet;
-    
+    position: relative;
     width: 100%;
-    height: 200px;
+    height: 100px;
     
 
 }
@@ -14,8 +14,31 @@ header{
 nav{
     border-top: 2px solid blueviolet;
     height: 50px;
-    bottom: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+    
 }
+
+.dropdown{
+    display: inline-block;
+    border: 1px solid blue;
+    width: 50px;
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+.dropdown:hover{
+    position: relative;
+    
+    bottom: -5px;
+    right: -5px;
+    
+}
+
+
+
 
 content{
 
@@ -29,5 +52,7 @@ aside{
 }
 
 footer{
+    position: absolute;
+    bottom:0;
 
 }
