@@ -1,70 +1,129 @@
 body{
+    width: 100%;
     margin: 0px;
 	background-color: #eee;
 }
 
 header{
-    border: 2px dashed blue ;
-    Font-size: 200%; 
-    width: 30%;
-    height: 50px;
-    display:block;
-    text-align: center;
-    border: 2px solid violet;
-    position: relative;
-    width: 100%;
-    height: 100px;
     
+    background-color: #3B69C7;
+    display:block;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.56);
+    border-bottom: 2px solid blue;
+    box-sizing: border-box;
 
+}
+
+header h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 100px;
+    margin: 0px;
+    
 }
 
 nav{
-    border: 2px solid blueviolet;
+    position: absolute;
+    top: 100px;
+}
+#menuToggle{
+    
+    display:none;
+    
+}
+
+
+#menuToggle + label{
     height: 100px;
-    width: 99%;
-    bottom: 2px;
-    font-size:150%;
-    border:2px darkred solid;     
-    text-align:center;
+    width: 100px;
+    float:left;
+    text-align: center;
+    line-height: 100px;
+    font-size: 100px;
+    background-color: #1C52BD;
+    border-right: 2px  solid blue;
+    border-bottom: 2px solid blue;
+    box-sizing: border-box;
+    
 }
-li  {
-display: inline;
-background-color: #eee;
-float: left;
+
+
+
+nav{
+    left: -100%;
+    background-color: #1C52BD;
+    width: 400px;
+    height: 100vh;
+    display:none;
+    box-shadow:15px 0 5px rgba(0, 0, 0, 0.56);
+    
+    
+    
+    
+    
+    
+    
 }
-li a{
-	display: block;
-	padding: 20px;
-	background-color: #eee;
-    font-size: 80%;
-  
+@keyframes slideIn {
+    from { left: -100%;}
+    to {left:0px;}
+
 }
 
 .dropdown{
+    border-bottom: 1px solid blue;
+    padding-left: 50px;
     
-    display: none;
-    border: 1px solid blue;
-    width: 50px;
-    height: 20px;
-    padding: 5px;
-    margin: 10px;
+    
 }
 
-.dropdown:hover{
-    bottom: -5px;
-    right: -5px;
-}
- #menuToggle:checked ~ .dropdown{
-    position: relative;
-    display:block;
+.dropdown a{
+    text-decoration:none;
+    color: black;
     
+}
+
+
+
+
+.group{
+    display: none;
+    height: 50px;
+    background-color: #124BBD;
     border: 1px solid blue;
-    width: 50px;
-    height: 20px;
-    padding: 5px;
-    margin: 10px;
+    text-align: center;
+    
     
 }
+
+.group a{
+    display:block;
+}
+
+
+
+.dropdown:hover{
+    box-shadow: 0px 5px 5px rgba(0, 0, 255, 0.53); 
+    background-color: #1D53C0;   
+}
+
+.dropdown:hover > .group{
+    display: block;
+}
+
+#menuToggle:checked +label~  nav{
+    display:block;
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    left: 0;
+
+}
+
+
+
 
 
 
@@ -81,7 +140,59 @@ aside{
 }
 
 footer{
-    position: absolute;
-    bottom:0;
+   
 
+}
+
+@media only screen  and (min-device-width : 1224px) {
+    
+    label{
+        display: none;
+    }
+    header h1{
+        font-size:50px;
+        
+        
+    }
+    header{
+        height: 50px;
+    }
+
+    nav{
+        width: 100%;
+        height: 30px;
+        top:50px;
+        display:block;
+        left: 0;
+        
+    }
+    nav h2{
+        margin:0px;
+        font-size:initial;
+        
+    }
+
+    .dropdown{
+        display:block;
+        width: 100px;
+        height: 30px;
+        position: relative;
+        float: left;
+        padding:0;
+        text-align: center;
+        line-height: 30px;
+        
+
+        
+    }
+    
+    
+
+    .group{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        vertical-align: middle;
+        
+    }
 }
