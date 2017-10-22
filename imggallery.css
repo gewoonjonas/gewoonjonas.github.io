@@ -1,46 +1,17 @@
 body{
   background-color: black;
-        }
-    div.gallery{
-    width: 100%;
-    max-width: 480px;
-    height: auto;
-    border: 2px red solid;
-    background-color: #2e2e2e;
-   }
-div.gallery img{
-    width: 100%;
-    max-width:480px;
-    height: auto;
+  width: 480px;
+    }
+    nav{
+        width:480px;
+        border: 2px solid #0D93E0;  
+        height: auto;
+        border-radius: 12px;
+        text-align: center;
     
-}
-div.gallery:hover{
-    border-color: #eee; 
-}
-div.desc{
-text-align: center; 
-color: darkgrey;
-font-size:200%;
-}
-div.desc:hover{
-    color:darkblue; 
-}
-aside{
-    color: red;
-    float:right;
-}
-nav{
-    border: 2px solid blueviolet;
-    height: 100px;
-    width: 480px;
-    bottom: 2px;
-    font-size:150%;
-    border:2px darkred solid;     
-    text-align:center;
-}
-li  {
-display: inline;
-}
+     }
+  
+     
 li a{
 	display: block;
 	padding: 20px;
@@ -48,4 +19,26 @@ li a{
     font-size: 80%;
     color:white;
   
+}
+
+
+
+@media screen and (min-width: 481px) {
+body{
+    width:1024px;
+}
+
+}
+@media screen and (min-width: 1025px) {
+  
+  body{
+      width:
+  }
+    nav{
+        width:100%;
+    }
+    
+
+                
+ }
 }

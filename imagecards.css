@@ -1,0 +1,78 @@
+
+body{
+    background-color:#2e2e2e;
+}
+div.gallery{    /*makin an image card */
+    border: 2px solid #0D93E0;
+    border-radius: 12px;
+    width: 480px;
+    height: auto;
+    padding:2px;
+    margin:3px;
+    background-color:black;
+  
+     }
+  div.gallery img{ /* setting the image*/
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+  div.gallery:hover{
+      border-color: #eee; 
+  }
+  div.desc{ /* description for cards*/
+  text-align: center; 
+  color: #0D93E0;
+  font-size:100%;
+  }
+  div.desc:hover{
+      color:#eee; 
+  }
+  div.flex{
+    display:flex;
+    flex-direction:column;
+}
+
+
+   
+  
+
+}
+@media only screen and (min-device-width: 481px) { /*first breakpoint*/
+  nav{
+      width:100%;
+  }
+    div.gallery{
+        width:50%;
+        height: auto;
+    }
+    div.desc{
+        font-size:150%;
+    }
+    div.flex{
+        flex-direction: row;     
+    }
+        }
+@media only screen and (min-width: 1025px) {/*second breakpoint*/
+  
+    nav{
+       width:140%;
+   }
+    div.gallery {
+       
+        width:25%;
+        
+        
+
+    }
+    div.gallery img{
+        width:100%;
+    }
+    div.desc{
+        font-size:80%;
+    }
+ 
+   }
+    
+    }
+
