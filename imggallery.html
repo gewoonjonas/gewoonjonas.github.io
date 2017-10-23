@@ -1,89 +1,155 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <link href="imggallery.css" rel="stylesheet"  type="text/css">
-    <link href="imagecards.css" rel="stylesheet" type="text/css">
-    <TITLE>
-        MEMES
-    </TITLE>
+  <link href="headerStyle.css" rel="stylesheet" type="text/css">
+  <link rel='stylesheet' type='text/css' href='contentStyle.css'>
+
+  <title>
+    MEMES
+  </title>
 </head>
 
 <body>
-      <nav>
-<ul>
-   <li><a href="HomePage.html">Homepage</a></li>
-   <li><a href="starwars.html">memes</a></li>
-   <li><a href="formulier.html">newsletter</a></li>
-   <li><a href="aboutus.html">aboutus</a></li>
-</ul>
-      </nav>
-                
-<div class="flex"> <!-- hier beginnen de cards-->
-      <div class="card">
-        <img src="images/images_gallery/meme1.gif" alt="Avatar" style="width:100%">
-        <div class="desc">
-        <h4>MY MAN</h4> 
-      <p>HAHAHAHAHA</p> 
+  <header>
+    <h1>memes </h1>
+    <input id="menuToggle" type="checkbox" name="hamburger"> <label for="menuToggle">&#9776;</label>
+    <nav>
+      <div class='dropdown'>
+        <a href="homePage.html">
+          <h2>Home</h2>
+        </a>
+
       </div>
-     </div>
-                                    
-                         
-     <div class="card">
-    <img src="images/images_gallery/meme3.png" alt="Avatar" style="width:100%">
-      <div class="desc">
-       <h4>Jonas</h4>
-      <p>think about the future.</p>
-     </div>
-     </div>
-                                            
-        <div class="card">
-      <img src="images/images_gallery/meme4.png" style="width:100%">
-      <div class="desc">
-      <h4>some random guy</h4>
-        <p>feels quite bad man</p>
-         </div>
-         </div>
-                     
-      <div class="card">
-      <img src="images/images_gallery/meme5.png" alt="Avatar" style="width:100%">
-      <div class="desc"><h4>steve carroll</h4>
-      <p>NOOOOOOOOOOOO</p>
-      </div>
-      </div>
-      
-       <div class="card">
-        <img src="images/images_gallery/meme9.png" alt="Avatar" style="width:100%">
-      <div class="desc"><h4>Coke</h4>
-      <p>What is this!?</p>
-      </div>
-      </div>
-                                                                         
-        <div class="card">
-       <img src="images/images_gallery/meme12.png" alt="Avatar" style="width:100%">
-        <div class="desc"><h4>smeagol</h4>
-       <p>know some teachers that may get a déjá vu</p>
-      </div>
+      <div class='dropdown'>
+        <h2>Meme Galleries</h2>
+
+
+        <div class="group">
+          <a href="imggallery.html">
+            <h2>Imgage Gallery</h2>
+          </a>
+        </div>
+
+        <div class="group">
+          <a href="starwars.html">
+            <h2>Star Wars</h2>
+          </a>
+        </div>
+
       </div>
 
-      <div class="card">
-       <img src="images/images_gallery/meme13.png" alt="Avatar" style="width:100%">
-        <div class="desc"><h4>luc?</h4>
-         <p>how "meme" can be pronounced...</p>
-       </div>
-      </div>       
-      <div class="card">
-       <img src="images/images_gallery/meme15.png" alt="Avatar" style="width:100%">
-        <div class="desc"><h4>Rob Geus</h4>
-         <p>tijdens het assessment.</p>
-       </div>
-      </div> 
-      <div class="card">
-      <img src="images/images_gallery/meme14.gif" alt="Avatar" style="width:100%">
-        <div class="desc"><h4>quickshot</h4>
-        <p>challenge completed!</p>
+      <div class='dropdown'>
+        <h2>Memepedia</h2>
+
+
+        <div class="group">
+          <a href="waterguy12.html">
+            <h2>The Tale of /u/Waterguy12</h2>
+          </a>
         </div>
-         </div>                  
- </div>
-                  
+
+        <div class="group">
+          <a href="games.html">
+            <h2>Memes In Games</h2>
+          </a>
+        </div>
+
+      </div>
+
+      <div class='dropdown'>
+        <a href="formulier.html">
+          <h2>Arbitrary Form</h2>
+        </a>
+
+      </div>
+
+      <div class='dropdown'>
+        <a href="aboutus.html">
+          <h2>About Us</h2>
+        </a>
+
+      </div>
+    </nav>
+  </header>
+
+  <content class="gallery">
+    <!-- hier beginnen de cards-->
+    <div class="card">
+      <img src="images/images_gallery/meme1.gif">
+      <div class="desc">
+        <h4>MY MAN</h4>
+        <p>HAHAHAHAHA</p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="images/images_gallery/meme3.png">
+      <div class="desc">
+        <h4>Jonas</h4>
+        <p>think about the future.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/images_gallery/meme4.png">
+      <div class="desc">
+        <h4>some random guy</h4>
+        <p>feels quite bad man</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/images_gallery/meme5.png">
+      <div class="desc">
+        <h4>steve carroll</h4>
+        <p>NOOOOOOOOOOOO</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/images_gallery/meme9.png">
+      <div class="desc">
+        <h4>Coke</h4>
+        <p>What is this!?</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/images_gallery/meme12.png">
+      <div class="desc">
+        <h4>smeagol</h4>
+        <p>know some teachers that may get a déjá vu</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/images_gallery/meme13.png">
+      <div class="desc">
+        <h4>luc?</h4>
+        <p>how "meme" can be pronounced...</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/images_gallery/meme15.png">
+      <div class="desc">
+        <h4>Rob Geus</h4>
+        <p>tijdens het assessment.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/images_gallery/meme14.gif">
+      <div class="desc">
+        <h4>quickshot</h4>
+        <p>challenge completed!</p>
+      </div>
+    </div>
+  </content>
+  <footer>
+    <p>&copy;MAASKANT productions</p>
+  </footer>
+
 </body>
+
 </html>

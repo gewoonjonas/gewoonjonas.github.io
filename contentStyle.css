@@ -4,18 +4,44 @@ content{
     flex-flow: row wrap;
     justify-content: space-around;
     margin:auto;
-    margin-top: 150px;
-    
-    
-    
+    margin-top: 100px;
+}
+@font-face{
+    font-family: rosecaps;
+    src: url(rosecaps.ttf);
 }
 
 article{
     box-sizing: border-box;
-    border: 2px solid red;
     padding: 20px;
+    background-color:#E6E6E6;
     
 }
+article div{
+    font-family: rosecaps;
+    font-size:200px;
+    line-height: 200px;
+    float: left;
+    
+}
+article span{
+    font-family: rosecaps;
+    font-size: 100px;
+}
+
+.parralax{
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+#water{background-image: url("waterguy/water.jpg")}
+#aquarius{background-image: url("waterguy/aquarius.jpg")}
+#spongebob{background-image: url("waterguy/spongebob.jpg")}
+#knife{background-image: url("waterguy/knife.jpg")}
 
 
 .oneByTwo{
@@ -35,21 +61,38 @@ section img{
     
 }
 
-
-
-aside{
-
+/* imagecards*/
+.card{
+    width:90%;
+    margin: 5px;
+    background-color: #E6E6E6
 }
 
+.card img{
+    border-radius: 5px;
+    width:100%;
+}
+
+.card:hover{
+    
+    box-shadow: 10px 10px 10px 10px rgba(2, 0, 0, 0.33);
+    transition: .2s;
+}
+
+.desc:hover{
+    color: #eee;
+    transition: 2s;
+}
 footer{
-   
-
+    
 }
+
+  
+/* /imagecards*/
+
+
 @media only screen and (min-device-width:480px){
-    content{
-        
-        
-    }
+    
     section img{
         width:50%;
     }
@@ -58,14 +101,45 @@ footer{
     .halfWidth{
         width:50%;
     }
-    
-    
-    
+
+    .imageRight img{ order: 2;}
+
+    /* imagecards*/
+    .card{
+        width:200px;
+        height:auto;
+      
+    }
+    .desc{
+        font-size:80%;
+    }
+    .flex{
+        flex-direction: row;    
+        flex-wrap: wrap; 
+    }
+    /* /imagecards*/
 
 }
 
 @media only screen  and (min-device-width : 1025px) {
+    content{
+        width: 800px;
+    }
+    .gallery{
+        width: 80%;
+    }
 
+    /* imagecards*/
+    .card {
+        width:200px;
+    }
 
+    .gallery img{
+        width:100%;
+    }
 
+    .desc{
+        font-size:120%;
+    }
+ /* /imagecards*/
 }
