@@ -1,72 +1,135 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <link href="imggallery.css" rel="stylesheet"  type="text/css">
-    <link href="imagecards.css" rel="stylesheet" type="text/css">
+    <link href="headerStyle.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' type='text/css' href='contentStyle.css'>
+
     <TITLE>
         MEMES
     </TITLE>
 </head>
 
 <body>
+    <header>
+        <h1>memes </h1>
+        <input id="menuToggle" type="checkbox" name="hamburger"> <label for="menuToggle">&#9776;</label>
         <nav>
-                <ul>
-                  <li><a href="HomePage.html">Homepage</a></li>
-                  <li><a href="imggallery.html">memes</a></li>
-                  <li><a href="formulier.html">form</a></li>
-                  <li><a href="aboutus.html">aboutus</a></li>
-                </ul>
-                </nav>
-                <div class="flex">
-                    <div class="card"><!-- hier beginnen de cards-->
-                            <img src="images/images_gallery/meme2.png" alt="Avatar" style="width:100%">
-                            <div class="desc">
-                              <h4><b>palpatine</b></h4> 
-                              <p>just DEW it</p> 
-                            </div>
-                            </div>
-                                        
-                             
-                                    <div class="card">
-                                            <img src="images/images_gallery/meme6.png" alt="Avatar" style="width:100%">
-                                            <div class="desc">
-                                                  <h4>jedi meisters</h4>
-                                                  <p>thanks.</p>
-                                            </div>
-                                                  </div>
-                                                
-                                                
-                                                <div class="card">
-                                                        <img src="images/images_gallery/meme7.png" style="width:100%">
-                                                        <div class="desc">
-                                                        <h4>Yoda</h4>
-                                                    <p>got some charges against him</p>
-                                                          </div>
-                                                              </div>
-                                                          
-                        
-                                                             <div class="card">
-                                                                    <img src="images/images_gallery/meme8.png" alt="Avatar" style="width:100%">
-                                                                    <div class="desc"><h4>Anakin</h4>
-                                                                      <p>Making a Poem...</p>
-                                                                      </div>
-                                                                          </div>
-                                                                          
-                                                                          <div class="card">
-                                                                              <img src="images/images_gallery/meme10.png" alt="Avatar" style="width:100%">
-                                                                              <div class="desc"><h4>Rogue One</h4>
-                                                                                <p>rogue One remake maybe?</p>
-                                                                                </div>
-                                                                                    </div>
-                                                                                    <div class="card">
-                                                                                        <img src="images/images_gallery/meme11.png" alt="Avatar" style="width:100%">
-                                                                                        <div class="desc"><h4>bobba fett</h4>
-                                                                                          <p>KO by a blind man.</p>
-                                                                                          </div>
-                                                                                              </div>
-                                                                                              </div>
-                                                                                    
-                                                                
-                        
+            <div class='dropdown'>
+                <a href="homePage.html">
+                    <h2>Home</h2>
+                </a>
+
+            </div>
+            <div class='dropdown'>
+                <h2>Meme Galleries</h2>
+
+
+                <div class="group">
+                    <a href="imggallery.html">
+                        <h2>Imgage Gallery</h2>
+                    </a>
+                </div>
+
+                <div class="group">
+                    <a href="starwars.html">
+                        <h2>Star Wars</h2>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class='dropdown'>
+                <h2>Memepedia</h2>
+
+
+                <div class="group">
+                    <a href="waterguy12.html">
+                        <h2>The Tale of /u/Waterguy12</h2>
+                    </a>
+                </div>
+
+                <div class="group">
+                    <a href="games.html">
+                        <h2>Memes In Games</h2>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class='dropdown'>
+                <a href="formulier.html">
+                    <h2>Arbitrary Form</h2>
+                </a>
+
+            </div>
+
+            <div class='dropdown'>
+                <a href="aboutus.html">
+                    <h2>About Us</h2>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    <content class="gallery">
+        <div class="card">
+            <!-- hier beginnen de cards-->
+            <img src="images/images_gallery/meme2.png" alt="Avatar" style="width:100%">
+            <div class="desc">
+                <h4><b>palpatine</b></h4>
+                <p>just DEW it</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="images/images_gallery/meme6.png" alt="Avatar" style="width:100%">
+            <div class="desc">
+                <h4>jedi meisters</h4>
+                <p>thanks.</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="images/images_gallery/meme7.png" style="width:100%">
+            <div class="desc">
+                <h4>Yoda</h4>
+                <p>got some charges against him</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="images/images_gallery/meme8.png" alt="Avatar" style="width:100%">
+            <div class="desc">
+                <h4>Anakin</h4>
+                <p>Making a Poem...</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/images_gallery/meme10.png" alt="Avatar" style="width:100%">
+            <div class="desc">
+                <h4>Rogue One</h4>
+                <p>rogue One remake maybe?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/images_gallery/meme11.png" alt="Avatar" style="width:100%">
+            <div class="desc">
+                <h4>bobba fett</h4>
+                <p>KO by a blind man.</p>
+            </div>
+        </div>
+    </content>
+    <footer>
+        <p>&copy;MAASKANT productions</p>
+    </footer>
+
+
+
 </body>
+
 </html>
